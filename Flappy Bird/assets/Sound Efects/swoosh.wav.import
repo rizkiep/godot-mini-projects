@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cvvyqoo8bbq2k"
+path="res://.godot/imported/swoosh.wav-a44483b763b38ad90cb12e72322a0757.sample"
+
+[deps]
+
+source_file="res://Flappy Bird/assets/Sound Efects/swoosh.wav"
+dest_files=["res://.godot/imported/swoosh.wav-a44483b763b38ad90cb12e72322a0757.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

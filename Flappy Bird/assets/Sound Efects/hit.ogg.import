@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fir0gkcdcm0u"
+path="res://.godot/imported/hit.ogg-a797f056b62fb6a8c6a72704be9ee35f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Flappy Bird/assets/Sound Efects/hit.ogg"
+dest_files=["res://.godot/imported/hit.ogg-a797f056b62fb6a8c6a72704be9ee35f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

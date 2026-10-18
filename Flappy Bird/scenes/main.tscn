@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cdidvwdp3j4oa"]
+
+[ext_resource type="Texture2D" uid="uid://c258piffyhale" path="res://Flappy Bird/assets/Game Objects/background-day.png" id="1_flvq3"]
+[ext_resource type="PackedScene" uid="uid://81h4c5htq1cy" path="res://Flappy Bird/scenes/player.tscn" id="2_5ld1u"]
+
+[node name="main" type="Node2D" unique_id=429576240]
+
+[node name="BackgroundDay" type="Sprite2D" parent="." unique_id=693396145]
+position = Vector2(359, 641.00006)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_flvq3")
+
+[node name="Player" parent="." unique_id=42270283 instance=ExtResource("2_5ld1u")]
+position = Vector2(357, 590)

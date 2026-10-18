@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://81h4c5htq1cy"]
+
+[ext_resource type="Texture2D" uid="uid://cgc5hhrnb4k63" path="res://Flappy Bird/assets/Game Objects/yellowbird-midflap.png" id="1_5y3dj"]
+[ext_resource type="Script" uid="uid://dcrb35x263l1s" path="res://Flappy Bird/scripts/player.gd" id="1_s6cs2"]
+[ext_resource type="Texture2D" uid="uid://bltru3j83qjmr" path="res://Flappy Bird/assets/Game Objects/yellowbird-downflap.png" id="2_s6cs2"]
+[ext_resource type="Texture2D" uid="uid://djn0etet0fqwk" path="res://Flappy Bird/assets/Game Objects/yellowbird-upflap.png" id="3_dccv3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hvra1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5y3dj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s6cs2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_5y3dj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dccv3")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_unw7t"]
+radius = 22.0
+height = 68.0
+
+[node name="Player" type="RigidBody2D" unique_id=42270283]
+script = ExtResource("1_s6cs2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=744482092]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_hvra1")
+autoplay = "default"
+frame = 1
+frame_progress = 0.33785716
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=762193633]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_unw7t")
